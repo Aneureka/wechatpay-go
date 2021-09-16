@@ -66,7 +66,14 @@ type Client struct {
 	validator  auth.Validator
 	signer     auth.Signer
 	cipher     cipher.Cipher
+	
+	services   Services
 }
+
+type Services struct {
+	Payments services.
+}
+
 
 // NewClient 初始化一个微信支付API v3 HTTPClient
 //
